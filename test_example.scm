@@ -13,6 +13,6 @@
 (test-group "numerical tests"
   (test-skip 1)
   (test-eqv "3 equals 5" 3 5)
-  (test-error "divide by zero throws error" "Numerical overflow" (/ 1 0))) ; TODO: figure out error type check
+  (test-error "division by zero throws error" 'numerical-overflow (/ 1 0))) ; TODO: figure out error type check
 ;; Finish the testsuite, and report results.
-(test-end "vec-test")
+(test-end "examples")
